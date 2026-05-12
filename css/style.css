@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #0f172a;
+    color: white;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 220px;
+    background: #001d61;
+}
+
+h1 {
+    color: aqua;
+    font-size: 28px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: rgb(0, 255, 242);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 80px;
+}
+
+.htexto {
+    width: 50%;
+}
+
+.htexto h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: rgb(0, 225, 255);
+}
+
+.htexto p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: whitesmoke;
+}
+
+.htexto button {
+    padding: 12px 35px;
+    border: none;
+    background: rgb(0, 255, 247);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.htexto button:hover {
+    background: rgb(146, 146, 146);
+    color: #ffffff;
+}
+
+.himg img {
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px aqua;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 250px;
+    background: #1e293b;
+    border-radius: 15px;
+    overflow: hidden; 
+    transition: 0.3s;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: aqua;
+    margin: 10px 0;
+}
+
+.card p {
+    color: whitesmoke;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.card:hover {
+    transform: translateY(-13px);
+    box-shadow: 0 10px 20px rgba(0, 238, 255, 0.5);
+}
+
+.carousel {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    animation: slide 12s infinite ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    30% { margin-left: 0; }
+    35% { margin-left: -100%; }
+    65% { margin-left: -100%; }
+    70% { margin-left: -200%; }
+    100% { margin-left: -200%; }
+}
